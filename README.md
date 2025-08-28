@@ -30,6 +30,9 @@ MVC (Model-View-Controller) based architecture
 
 Easy deployment on Apache Tomcat
 
+MY WEBSITE : 
+
+<img width="1896" height="1014" alt="Screenshot 2024-04-24 075923" src="https://github.com/user-attachments/assets/98ea69ab-c9f5-430d-a715-4323b75c56f1" />
 
 
 
