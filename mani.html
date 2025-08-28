@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>E-Commerce Website</h1>
+        <div id="cart-icon">
+            <img src="cart-icon.png" alt="Cart" id="cart-img">
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+   <h1>Product Page</h1>
+    <div>
+        <h2>Product 1</h2>
+        <p>Price: $10.00</p>
+        <form action="mom.jsp" method="post">
+            <input type="hidden" name="product" value="Product 1">
+            <input type="hidden" name="price" value="10.00">
+            <button type="submit">Add to Cart</button>
+        </form>
+    </div>
+    <div>
+        <h2>Product 2</h2>
+        <p>Price: $15.00</p>
+        <form action="mom.jsp" method="post">
+            <input type="hidden" name="product" value="Product 2">
+            <input type="hidden" name="price" value="15.00">
+            <button type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>

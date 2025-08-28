@@ -1,0 +1,57 @@
+.container-fluid .container
+{
+
+     border: 0px solid;
+     display: grid;
+     padding: 1rem;
+     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+     gap: 1.5;
+
+}
+.container-fluid .container:first-child
+{
+     margin-bottom: 2rem;
+     
+} 
+.container-fluid .container .product
+{
+     border: 0px solid red;
+     text-align: center;
+     background: #fff;
+     border-radius: .5rem;
+     text-align: center;
+     padding: 3rem 2rem;
+     width: 40rem;
+     outline-offset: -1rem;
+     outline: var(--outline);
+     box-shadow: var(--box-shadow);
+     transition: .2s linear;
+}
+.container-fluid .container .product:hover
+{
+
+     box-shadow: 1px 1px 10px 4px var(--green);
+}
+.container-fluid .container .product img
+{
+     height: 20rem;
+
+} 
+.container-fluid .container .product h3
+{
+     font-size: 2.5rem;
+      color: var(--black);
+
+}
+.container-fluid .container .product .price
+{
+     font-size: 2rem;
+     color: var(--light-color);
+     padding: .2rem 0;
+}
+.container-fluid .container .product .stars i
+{
+font-size: 1.7rem;
+color: orange;
+padding: .5rem 0;
+}

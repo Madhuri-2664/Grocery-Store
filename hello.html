@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="sts.css">
+  <style>
+      body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+  }
+  
+  .cart-icon {
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  </style>
+</head>
+<body>
+  <div class="cart-icon" id="cartIcon">Cart: 0</div>
+  <div id="cartItems" style="display: none;">
+    <h3>Cart Items:</h3>
+    <table id="cartItemList">
+      <tr>
+        <th>Product Name</th>
+        <th>Quantity</th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="product">
+    <img src="">
+    <h2>Product Name</h2>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Price: $10.00</p>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <button id="addToCartButton">Add to Cart</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var addToCartButton = document.getElementById('addToCartButton');
+      var cartIcon = document.getElementById('cartIcon');
+      var cartQuantity = 0;
+      var cartItems = [];
+
+      addToCartButton.addEventListener('click', function() {
+        var quantity = parseInt(document.getElementById('quantity').value);
+        cartQuantity += quantity;
+        updateCartIcon();
+        addToCartList(quantity);
+      });
+
+      cartIcon.addEventListener('click', function() {
+        toggleCartItems();
+      });
+
+      function updateCartIcon() {
+        cartIcon.textContent = "Cart: " + cartQuantity;
+      }
+
+      function toggleCartItems() {
+        var cartItemsDiv = document.getElementById('cartItems');
+        if (cartItemsDiv.style.display === "none") {
+          cartItemsDiv.style.display = "block";
+        } else {
+          cartItemsDiv.style.display = "none";
+        }
+      }
+
+      function addToCartList(quantity) {
+        var productName = document.querySelector('.product h2').textContent;
+        cartItems.push({ name: productName, quantity: quantity });
+        displayCartItems();
+      }
+
+      function displayCartItems() {
+        var cartItemList = document.getElementById('cartItemList');
+        cartItemList.innerHTML = ''; // Clear previous items
+        cartItems.forEach(function(item) {
+          var row = cartItemList.insertRow();
+          var nameCell = row.insertCell(0);
+          var quantityCell = row.insertCell(1);
+          nameCell.textContent = item.name;
+          quantityCell.textContent = item.quantity;
+        });
+      }
+    });
+  </script>
+</body>
+</html>

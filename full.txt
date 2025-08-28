@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grocery store</title>
+
+<!-- code for font awesome cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet” href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<style>
+    .box1{
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        text-align: center;
+    }
+    .box1 #pic{
+        float: left;
+        width: 100%;
+        height: 20px;
+        padding: 1rem;
+    }
+  
+</style>
+    <body>
+    
+    <header class="header">
+         <a href="#" class="logo"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Grocery</a>
+         
+         <nav class="navbar">
+             <a href="#Home">Home</a>
+             <a href="#Features">Features</a>
+             <a href="#Products">Products</a>
+             <a href="#Categories">Categories</a>
+             <a href="#Review">Review</a>
+             <a href="#footer">Contact</a>
+         </nav>
+
+<div class="icons">
+    <div class="fa fa-bars" id="menu-btn"></div>
+    <div class="fa fa-search" id="search-btn"></div>
+    <div class="fa fa-shopping-cart" id="cart-btn"></div>
+    <div class="fa fa-user" id="login-btn"></div>
+</div>
+
+
+<form class="search-form">
+      <input type="search" id="search-box" placeholder="Search Here.....">
+          <label form="search-box" class="fa fa-search"></label>
+ </form>
+ <div class="shopping-cart">
+     <div class="box">
+         <i class="fa fa-trash"></i>
+                 <img src="C:\Users\krish\OneDrive\Documents\grocery\image\1658326507295grocery\cart-img-1.png">
+         <div class="content">
+             <h3>watermelon</h3>
+             <span class="price">$5.99/-</span>
+             <span class="Quantity">Qty : 1</span>
+         </div>
+     </div>
+     <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="C:\Users\krish\OneDrive\Documents\grocery\image\1658326507295grocery\cart-img-2.png">
+        <div class="content">
+            <h3>onion</h3>
+            <span class="price">$4.99/-</span>
+            <span class="Quantity">Qty : 2</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="C:\Users\krish\OneDrive\Documents\grocery\image\1658326507295grocery\cart-img-3.png">
+        <div class="content">
+            <h3>chicken</h3>
+            <span class="price">$7.99/-</span>
+            <span class="Quantity">Qty : 1</span>
+        </div>
+    </div>
+<div class="total"> Total : $18.97</div>
+<a href="#" class="btn">checkout</a>
+ </div>
+<div>
+<div class="login-form">
+    <div class="button-box">
+        <div id="bt"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+    <div class="social-icons">
+        <img src="https://cdn.icon-icons.com/icons2/1945/PNG/512/iconfinder-google-4661601_122471.png">
+        <img src="C:\Users\krish\OneDrive\Documents\grocery\fb.png">
+        <img src="C:\Users\krish\OneDrive\Documents\grocery\tw.png">
+    </div>
+    <form  id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="user Id" required>
+            <input type="text" class="input-field" placeholder="Enter password" required>
+           <input type="checkbox" class="chech-box"><span>REMEMBER PASSWORD</span>
+           <button type="submit" class="submit-btn">login</button>
+    </form>
+    <form  id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="user Id" required>
+        <input type="email" class="input-field" placeholder="Email Id" required>
+        <input type="text" class="input-field" placeholder="Enter password" required>
+       <input type="checkbox" class="chech-box"><span>I agree the terms & conditions</span>
+       <button type="submit" class="submit-btn">Register</button>
+    </form>
+    
+</div>
+
+  </div>     
+
+</header>
+
+<section class="Home" id="Home">
+    <div class="content" >
+        <h3> Fresh and <span>Organic</span> Products For You</h3>
+        <p>Weight Loss and Healthy Eating is a journey that begins at the grocery store.</p>
+
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section class="Features" id="Features">
+    <h1 class="heading"> Our <span> Features</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="image/1658326507295grocery/feature-img-1.png">
+            <h3>Fresh and organic</h3>
+            <p>Lorem,Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Desertunt,Earum!</p>
+            <a href="#" class="btn">Read More</a>
+
+        </div>
+
+    <div class="box">
+        <img src="image/1658326507295grocery/feature-img-2.png">
+        <h3>Free Delivery</h3>
+        <p>Lorem,Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+            Desertunt,Earum!
+        </p>
+        <a href="#" class="btn">Read more</a>
+
+    </div>
+    <div class="box">
+        <img src="image/1658326507295grocery/feature-img-3.png">
+        <h3>Payment</h3>
+        <p>Lorem,Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+            Desertunt,Earum!
+        </p>
+        <a href="#" class="btn">Read more</a>
+
+    </div>
+    </div>
+</section>
+<section class="Products" id="Products">
+     <h1 class="heading"> Our <span>Products</span></h1>
+    <div class="Product-slider">
+        <div class="wrapper">
+            <div class="box1">
+          <img src="C:/Users/krish/OneDrive/Documents/grocery/image/1658326507295grocery/product-1.png" >
+            <h1>Fresh Orange</h1>
+            <div class="price">$12.99/- -15.99/-</div>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+               </div>
+            <a href="#" class="btn" >Add to cart</a>
+            
+        </div>
+        <div class="box1">
+                <img  src="C:/Users/krish/OneDrive/Documents/grocery/image/1658326507295grocery/product-2.png" >
+                <h1>Fresh Onion</h1>
+                <div class="price">$4.99</div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div> 
+<a href="#" class="btn" >Add to cart</a>
+                </div>
+                    <div class="box1">
+                    <img  src="C:/Users/krish/OneDrive/Documents/grocery/image/1658326507295grocery/product-3.png" >
+                    <h1>Fresh chicken</h1>
+                    <div class="price">$70.99/- -90.99/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="btn" >Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Product-slider">
+                <div class="wrapper">
+                    <div class="box1">
+                        <img  src="C:/Users/krish/OneDrive/Documents/grocery/image/1658326507295grocery/product-4.png" >
+                        <h1>cabbage</h1>
+                        <div class="price">$12.99/- -15.99/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a href="#" class="btn" >Add to cart</a>
+                    </div>
+                        <div class="box1">
+                            <img  src="C:/Users/krish/OneDrive/Documents/grocery/image/1658326507295grocery/product-5.png">
+                            <h1>Fresh Potato</h1>
+                            <div class="price">$9.99/- -11.99/-</div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <a href="#" class="btn" >Add to cart</a>
+                            </div>
+                            <div class="box1">
+                                <img src="C:/Users/krish/OneDrive/Documents/grocery/image/1658326507295grocery/product-6.png">
+                                <h1>Avocada</h1>
+                                <div class="price">$15.99/- -18.99/-</div>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <a href="#" class="btn" >Add to cart</a>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                            <div class="Product-slider">
+                                <div class="wrapper">
+                            <div class="box1">
+                            <img  src="C:/Users/krish/OneDrive/Documents/grocery/image/1658326507295grocery/product-7.png" >
+                            <h1>Carrot</h1>
+                            <div class="price">$12.99/- -15.99/-</div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <a href="#" class="btn" >Add to cart</a>
+                            </div>
+                            <div class="box1">
+                                <img  src="C:/Users/krish/OneDrive/Documents/grocery/image/1658326507295grocery/product-8.png" >
+                                <h1>Lemon</h1>
+                                <div class="price">$4.99</div>
+                                
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <a href="#" class="btn" >Add to cart</a>
+                            </div>
+                        </div>
+                </div>
+</section>
+<section class="Categories" id="Categories">
+    <h1 class="heading">Product<span>Categories</span></h1>
+    <div class="box-container">
+    <div class="box">
+        <img src="cat-1.png">
+        <h3>Vegetables</h3>
+        <p>Upto 45% Offer</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+    <div class="box">
+        <img src="cat-2.png">
+        <h3>Fresh Fruits</h3>
+        <p>Upto 45% Offer</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+    <div class="box">
+        <img src="cat-3.png">
+        <h3>Dairy Products</h3>
+        <p>Upto 45% Offer</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+    <div class="box">
+        <img src="cat-4.png">
+        <h3>Fresh meat</h3>
+        <p>Upto 45% Offer</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+    </div>
+</section>
+<section class="Review" id="Review">
+      <h1 class="heading">Customer's <span>Review</span></h1>
+      <div class="reviewslider">
+          <div class="wrapper">
+              <div class="box1">
+                <img src="C:\Users\krish\OneDrive\Documents\grocery\image\1658326507295grocery\pic-1.png">
+                <p>The products very good</p>
+                <h3> John deo </h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+               </div>
+            <div class="box1">
+            <img src="C:\Users\krish\OneDrive\Documents\grocery\image\1658326507295grocery\pic-2.png">
+            <p>Excellent Products</p>
+            <h3> Sophia </h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="box1">
+                <img src="C:\Users\krish\OneDrive\Documents\grocery\image\1658326507295grocery\pic-3.png">
+                <p>The products Quality is very Good</p>
+                <h3> Joseph </h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+         </div>
+
+         
+     </div>
+ </div>
+</section>
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+                <div class="box2">
+                    <a href="#" class="links"> info@example.com</a>
+                  <a href="#" class="links"><i class="fa fa-map-marker"></i> India</a>
+                  <a href="#" class="links"><i class="fa fa-phone"></i> +91 8328094894</a>
+                  <a href="#" class="links"><i class="fa fa-phone"></i> +91 9390628538</a>
+                </div>
+                  <div class="box2">
+                      <h1>Newletter</h1>
+                      <p> Subscribe for latest Updates</p>
+                      <input type="submit" Value="Subscribe" class="btn">
+                      <input type="phonenumber" placeholder="Enter your Number" class="phonenumber">
+                      <input type="submit" value="PayNow" class="btn">
+                      <img src="C:\Users\krish\OneDrive\Documents\grocery\image\1658326507295grocery\payment.png" >
+                      </div>
+              </div>
+      </section>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="js/script.js">
+        
+      </script>   
+ </body>
+</html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root
+{
+    --green: green;
+    --black: #130f40;
+    --light-color:#666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+
+    --border: 2rem solid  rgba(0,0,0.1);
+    --outline: .1rem solid rgb(0, 0, 0);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration:  none;
+    text-transform: capitalize;
+    transition:: all.2s linear;
+
+}
+html
+{
+     font-size: 62.5%;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+     scroll-padding-top: 7rem;
+}
+body
+{
+     background-color: #eee;
+     
+}
+section
+{
+      padding: 2rem 9%;
+
+
+     }
+.heading 
+{
+     text-align: center;
+     padding: 2rem 0;
+     padding-bottom: 3rem;
+     font-size:  3.5rem;
+     color: var(--black);
+}
+
+.heading span
+{
+     background: var(--green);
+     color: #fff;
+     display: inline-block;
+     padding:  .5rem 3rem;
+     clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+
+}
+
+
+
+
+
+.btn
+{
+    border: .2rem solid var(--black);
+     margin top: 1rem;
+     display: inline-block;
+     padding: .8rem 3rem;
+     font-size: 1.7rem;
+     border-radius: .5rem;
+     color: var(--black);
+     cursor: pointer;
+     background: none;
+
+}
+.btn:hover
+{
+     background: var(--green);
+     color: #fff;
+
+}
+
+.header
+{
+     border: 0px solid;
+     position :fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding:2rem 9%;
+     background: #fff;
+     box-shadow: var(--box-shadow);
+}
+.header .logo
+{
+     font-size: 2.5rem;
+     font-weight: bolder;
+}
+.header .logo i
+{
+      color: var(--green);
+
+}
+.header .navbar a
+{
+     font-size: 1.7rem;
+     margin: 0 1rem;
+     color:var(--black);
+
+}
+.header .navbar align-self: hover
+{
+      color:var(--green);
+}
+.header .icons div
+{
+   border: 1px solid;
+   height: 4.2rem;
+   width: 4.2rem;
+   line-height: 4.5rem;
+   border-radius: .5rem;
+   background: #eee;
+   color: var(--black);
+   font-size: 2rem;
+   margin-right: .3rem;
+   text-align: center;
+}
+.header .icons div:hover
+{
+     background: var(--green);
+     color: white;
+}
+
+#menu-btn
+{
+     display: none;
+}
+.header .search-form
+{
+     border: 0px solid;
+     position: absolute;
+     top: 110%;
+     right: -110%;
+     max-width: 50rem;
+     height: 5.5rem;
+     background: #fff;
+     border-radius: .5rem;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active
+{
+     right: 2rem;
+     transition: .4s linear;
+
+}
+
+.header .search-form input
+{
+      height: 100%;
+      width: 100%;
+      background: none;
+      text-transform: none;
+      font-size: 1.6rem;
+      color: var(--black);
+      padding:  0 1.5rem;
+}
+.header .search-form label
+{
+     font-size: 2.2rem;
+     padding-right: 1.5rem;
+     color: var(--black);
+     cursor: pointer;    
+} 
+.header .search-form label
+{
+     color:var(--green);
+
+}
+
+
+.header .shopping-cart
+{
+     border: 0px solid;
+     position: absolute;
+     top: 110%;
+     right: -110%;
+     padding: 1rem;
+     border-radius: .5rem;
+     box-shadow: var(--box-shadow);
+     width: 30rem;
+     background: #fff;
+}
+.header .shopping-cart.active
+{
+     right: 2rem;
+     transition: .4s linear;
+}
+.header .shopping-cart .box
+{
+       border: 0px solid blue;
+       display: flex;
+       align-items: center;
+       gap: 1rem;
+       position: relative;
+       margin: 1rem 0;
+}
+
+.header .shopping-cart .box img
+{
+     height: 10rem;
+}
+
+.header .shopping-cart .box .fa-trash
+{
+     font-size: 2rem;
+     position:absolute;
+     top: 50%;
+     right: 2rem;
+     cursor: pointer;
+     color: var(--light-color);
+     transform: translate(-50%);
+}
+
+
+.header .shopping-cart .box .fa-trash:hover
+{
+     color: var(--green);
+}
+
+.header .shopping-cart .box  .content h3
+{
+     color: var(--black);
+     font-size: 1.7rem; 
+     padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box  .content span
+{
+     color: var(--lioght-color);
+     font-size: 1.6rem; 
+}
+
+.header .shopping-cart .box  .content .quantity
+{
+     padding-left: 1rem;
+}
+
+.header .shopping-cart .total
+{
+     font-size: 2.5rem;
+     padding: 1rem 0;
+     text-align: center;
+    color: var(--black);
+
+
+}
+.header  .shopping-cart .btn
+{
+     display: black;
+     text-align:  center;
+     margin: 1rem 0;
+}
+
+
+.header .login-form
+{
+     border: 1px solid;
+     position: absolute;
+     width: 380px;
+     top: 110%;
+     right: -110%;
+     height: 480px;
+     box-shadow: var(--box-shadow);
+     padding: 5px;
+     border-radius: .5rem;
+     background: #fff;
+     text-align: center;
+     overflow: hidden;
+}
+.header .button-box{
+     width: 220px;
+     margin: 35px auto;
+     position: relative;
+     box-shadow: 0 0 20px 9px #11e011;
+     border-radius: 30px;
+}
+.toggle-btn{
+     padding: 10px 30px;
+     cursor: pointer;
+     background: transparent;
+     border: 0;
+     outline: none;
+     position: relative;
+
+}
+#bt{
+     position: absolute;
+     width: 110px;
+     height: 100%;
+     background: linear-gradient(to right,#0d990d,#11e011);
+     border-radius: 30px;
+     transition: .5s;
+}
+.social-icons{
+     margin: 30px auto;
+     text-align: center;
+
+}
+.social-icons img{
+        width: 30px;
+        margin: 0 12px;
+        box-shadow: 0 0 20px 0 #11e011;
+        cursor: pointer;
+        border-radius: 50%
+}
+.input-group{
+     top: 180px;
+     position: absolute;
+     width: 280px;
+     transition: .5s;
+}
+.input-field{
+     width: 100%;
+     padding: 10px 0;
+     margin: 5px 0;
+     border-left: 0;
+     border-top: 0;
+     border-right: 0;
+     border-bottom: 1px solid #999;
+     outline: none;
+     background: transparent;
+}
+.submit-btn{
+     width: 85%;
+     padding: 10px 30px;
+     cursor: pointer;
+     display: block;
+     margin: auto;
+     background: linear-gradient(to right,#0d990d,#11e011);
+     border: 0;
+     outline: none;
+     border-radius: 30px;
+}
+.chech-box{
+     margin: 30px 10px 30px 0;
+
+}
+.chech-box span{
+     color:#777;
+     font-size: 12px;
+     bottom: 68px;
+     position: absolute;
+}
+#login{
+    left: 50px; 
+}
+#register{
+     left: 450px;
+}
+.header .login-form.active
+{
+     right: 2rem;
+     transition: .4s linear;
+}
+.header .login-form h3
+{
+     font-size:  2.5rem;
+     text-transform:  uppercase;
+     color: var(--black);
+
+}
+.header .login-form .box
+{
+     width: 100%;
+     border: 1px solid;
+     margin: .7rem 0;
+     background: #eee;
+     border-radius:  .5rem;
+     padding: 1rem;
+     font-size: 1.6rem;
+     color: var(--black);
+     text-transform: none;
+}
+
+.header .login-form p
+{
+     font-size: 1.4rem;
+     padding: .5rem 0;
+     color: var(--light-color);
+
+}
+
+.header .login-form p a
+{
+      color: var(--green);
+      text-decoration: underline;
+}
+.Home
+{
+     border: 0px solid;
+     display: flex;
+     justify-content: center;
+     background: url(../image/1658326507295grocery/banner-img.jpg);
+     background-position: center;
+     background-size: cover;
+     padding-top: 17rem;
+     padding-bottom: 10rem;
+}
+
+.Home .content
+{
+     border: 0px solid;
+     text-align: center;
+     width: 60rem;
+
+}
+.Home .content h3
+{
+     color: var(--black);
+     font-size: 3rem;
+}
+
+.Home .content h3 span
+{
+     color: var(--green);
+}
+
+.Home .content p
+{
+     color: var(--light-color);
+     font-size: 1.7rem;
+     padding: 1rem 0;
+     line-height: 1.8;
+}
+.Features .box-container
+{
+     border: 0px solid;
+     display:  grid;
+     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+     gap: 1rem;
+}
+.Features .box-container .box
+{
+     border: 0px solid red;
+     padding: 3rem 2rem;
+     background: #fff;
+     outline: var(--outline);
+     outline-offset: -1rem;
+     text-align: center;
+     box-shadow: var(--box-shadow);
+}
+.Features .box-container .box:hover
+{
+     box-shadow: 1px 1px 10px 4px var(--green);
+}
+.Features .box-container .box img
+{
+     margin: 1rem 0;
+     height: 15rem;
+}
+.Features .box-container .box h3
+{
+     font-size: 2.5rem;
+     line-height: 1.8;
+     color: var(--black);
+}
+.Features .box-container .box p
+{
+     font-size: 1.5rem;
+     line-height: 1.8;
+     color: var(--light-color);
+     padding-bottom: 1rem 0;
+
+}
+.Products .Product-slider
+{
+
+     border: 0px solid;
+     display: grid;
+     padding: 1rem;
+     gap: 1.5;
+
+}
+.Products .Product-slider:first-child
+{
+     margin-bottom: 2rem;
+     
+} 
+.Products .Product-slider .box1
+{
+     border: 0px solid red;
+     align-items: center;
+     text-align: center;
+     background: #fff;
+     border-radius: .5rem;
+     text-align: center;
+     padding: 3rem 2rem;
+     outline-offset: -1rem;
+     outline: var(--outline);
+     box-shadow: var(--box-shadow);
+     transition: .2s linear;
+}
+.Products .Product-slider .box1:hover
+{
+
+     box-shadow: 1px 1px 10px 4px var(--green);
+}
+.Products .Product-slider .box1 img
+{
+     height: 20rem;
+
+} 
+.Products .Product-slider .box1  h1
+{
+     font-size: 2.5rem;
+      color: var(--black);
+
+}
+.Products .Product-slider .box1 .price
+{
+     font-size: 2rem;
+     color: var(--light-color);
+     padding: .2rem 0;
+}
+.Products .Product-slider .box1 .stars i
+{
+font-size: 1.7rem;
+color: orange;
+padding: .5rem 0;
+}
+.Categories .box-container
+{
+     border: 0px solid;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+     gap: 1.5rem;
+}
+.Categories .box-container .box
+{
+     padding: 3rem 0;
+     background: #ff;
+     border-radius: .5rem;
+     box-shadow: var(--box-shadow);
+     outline: var(--outline);   
+     outline-offset: -1rem;
+     text-align: center;
+}
+.Categories .box-container .box:hover
+{
+     box-shadow: 1px 1px 10px 4px var(--green); 
+}
+.Categories .box-container .box h3
+{
+     font-size: 2rem;
+     color: var(--black);
+     line-height: 1.8;
+}
+.Categories .box-container .box p
+{
+     font-size: 1.7rem;
+     color: var(--light-color);
+     line-height: 1.8;
+     padding: 1rem 0;
+
+}
+.Review .reviewslider
+{
+     border: 0px solid;
+     padding: 1rem;
+}
+.Review .reviewslider .box1
+{
+     border: 0px solid red;
+     background: #fff;
+     border-radius: .5rem;
+     text-align: center;
+     padding: 3rem 2rem;
+     outline-offset: -1rem;
+     outline: var(--outline);
+     box-shadow: var(--box-shadow);
+     transition: .2s linear;
+}
+.Review .reviewslider .box1:hover
+{
+     box-shadow: 1px 1px 10px 4px var(--green); 
+}
+.Review .reviewslider .box1 img
+{
+     height: 25rem;
+     width: 25rem;
+     border-radius: 75%;
+
+} 
+.Review .reviewslider .box1 h3
+{
+     font-size: 2.5rem;
+      color: var(--black);
+      padding-bottom: .5rem;
+
+}
+.Review .reviewslider .box1 .price
+{
+     font-size: 2rem;
+     color: var(--light-color);
+     padding: .5rem 0;
+}
+.Review .reviewslider .box1 .stars i
+{
+      font-size: 1.7rem;
+       color: orange;
+       padding: .5rem 0;
+} 
+.Review .reviewslider .box1 p
+{
+     font-size: 2rem;
+     color: black;
+     padding: 1rem 0;
+     line-height: 1.8;
+}
+.footer 
+{
+     background: #fff;
+     padding: 1rem;
+     text-align: center;
+
+}
+.footer .box-container 
+{
+     border: 0px solid;
+     grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+     gap: 1.5rem;
+}
+.footer .box-container .box2 h1
+{
+     font-size: 2.5rem;
+     color: var(--black);
+     padding: 1rem 0;
+     line-height: 1.8rem;
+     display: grid;
+
+
+}
+.footer .box-container .box2 .links
+{
+     color: var(--green);
+     margin: .7rem 0;
+     padding: 1rem;
+     border-radius: .5rem;
+    font-size: 3.5rem;
+  
+}
+.footer .box-container .box2 a
+{
+     font-size: 1.5rem;
+     color: var(--black);
+     padding: 1rem 0;
+}
+
+.footer .box-container .box2  h1 i
+{
+     color: var(--green);
+     font-size: 1rem;
+     text-align:center;
+}
+.footer .box-container .box2 .phonenumber
+{
+     margin: .7rem 0;
+     padding: 1rem;
+     border-radius: .5rem;
+     background: #eee;
+     font-size: 1.6rem;
+     color: var(--black);
+     text-transform: none;
+
+} 
+.footer .box-container .box2 i
+{
+     color: var(--green);
+}
+.footer .box-container .box2 img
+{
+     height: 10rem;
+     border-radius: 25%;
+}
+.footer .box-container .box2 p
+{
+     color: var(--green);
+     margin: .7rem 0;
+     padding: 1rem;
+     border-radius: .5rem;
+    font-size: 3.5rem;
+}
+
+
+
+     
+@media (max-width: 991px)
+{
+     html
+     {
+          font-size:  55%;
+     }
+}
+@media (max-width: 768px)
+{
+    .header.navbar
+    {
+         position: absolute;
+         top: 110%;
+         right: 2rem;
+         width: 30rem;
+         box-shadow:  var(--box-shadow);
+         border-radius: .5rem;
+         background-color: #fff;
+    }
+}
+@media (max-width: 450px)
+{
+     html
+     {
+          font-size:  50%;
+     }
+     .header
+{
+    padding: 2rem;
+
+}
+section
+{
+     padding: 2rem;
+}
+}
+
+
+
+
+
+
+let searchForm  = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>
+{
+    searchForm.classList.toggle('active');
+}
+
+let shoppingcart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>
+{
+    shoppingcart.classList.toggle('active');
+}
+
+let loginform= document.querySelector('.login-form');
+
+document.querySelector('#login-btn').onclick = () =>
+{
+    loginform.classList.toggle('active')
+}
+
+var x=document.getElementById("login");
+var y=document.getElementById("register");
+var z=document.getElementById("bt");
+function register(){
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "50px";
+}
+function login(){
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0px";
+}

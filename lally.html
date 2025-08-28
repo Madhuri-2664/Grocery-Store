@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<style>
+    /* styles.css */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 10px;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <h1>Book an Appointment</h1>
+        <form id="appointmentForm" action="book_appointment.jsp" method="POST">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+<script>
+    // scripts.js
+document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+
+    // Send a POST request to the server with the date and time
+    fetch('book_appointment.jsp', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `date=${date}&time=${time}`
+    })
+    .then(response => response.text())
+    .then(data => {
+        // Display the result to the user
+        document.getElementById('result').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('result').innerHTML = 'An error occurred while booking the appointment.';
+    });
+});
+
+</script>
+
+</html>

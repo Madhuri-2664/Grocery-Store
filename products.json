@@ -1,0 +1,38 @@
+let products = [
+    {
+            "id": 1,
+            "name": "PRODUCT 1",
+            "image": 'image/1658326507295grocery/product-5.png',
+            "price": 2000
+        },
+        {
+            "id": 2,
+            "name": "PRODUCT 2",
+            "image":"2.png",
+            "price": 2200
+        },
+        {
+            "id": 3,
+            "name": "PRODUCT 3",
+            "image":"3.png",
+            "price": 2400
+        },
+        {
+            id: 1,
+            image: 'image/1658326507295grocery/product-2.png',
+            title: 'onion',
+            price: 60,
+        },
+        {
+            "id": 5,
+            "name": "PRODUCT 5",
+            "image":"image/1658326507295grocery/product-1.png",
+            "price": 1400
+        },
+        {
+            "id": 6,
+            "name": "PRODUCT 6",
+            "image":"6.png",
+            "price": 1800
+        }
+    ]

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Booking</title>
+  </head>
+<style>
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    </style>
+<body>
+    <div class="container">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm" action="bookAppointment.jsp" method="POST">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <input type="submit" value="Book Appointment">
+        </form>
+        <div id="result"></div>
+    </div>
+
+    
+</body>
+<script>
+
+    // script.js
+
+document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    // Send the form data to the server
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", form.action);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    
+    const date = form.date.value;
+    const time = form.time.value;
+
+    xhr.onload = function() {
+        const resultDiv = document.getElementById("result");
+        if (xhr.status === 200) {
+            // If the booking was successful, display a success message
+            resultDiv.textContent = "Appointment booked successfully!";
+            resultDiv.style.color = "green";
+        } else {
+            // If there was an error, display an error message
+            resultDiv.textContent = "Failed to book appointment: " + xhr.responseText;
+            resultDiv.style.color = "red";
+        }
+    };
+
+    // Send the data
+    xhr.send(`date=${date}&time=${time}`);
+});
+
+    </script>
+
+
+</html>
